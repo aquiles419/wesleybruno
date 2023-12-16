@@ -84,25 +84,17 @@
     </div>
     <div class="sidebar-content">
       <div class="sidebar-logo">
-        <a href="index.html"><img src="assets/images/logo.svg" alt="Logo" /></a>
+        <a href="index.html"><img src="assets/images/logo-bruno original.svg" alt="Logo" /></a>
       </div>
-      <p class="text">Lorem ipsum dolor sit amet adipisicing elit. Sapiente fuga nisi rerum iusto intro.</p>
+      <p class="text">Construindo caminhos para o bem-estar emocional: seu apoio compassivo em
+         cada passo do processo de autoconhecimento e crescimento pessoal.</p>
       <!-- logo -->
-      <div class="sidebar-menu">
-        <h5 class="menu-title">Quick Links</h5>
-        <ul>
-          <li><a href="javascript:void(0)">About Us</a></li>
-          <li><a href="javascript:void(0)">Our Team</a></li>
-          <li><a href="javascript:void(0)">Latest News</a></li>
-          <li><a href="javascript:void(0)">Contact Us</a></li>
-        </ul>
-      </div>
       <!-- menu -->
       <div class="sidebar-social align-items-center justify-content-center">
-        <h5 class="social-title">Follow Us On</h5>
+        <h5 class="social-title">Siga-me nas redes sociais</h5>
         <ul>
           <li>
-            <a href="javascript:void(0)"><i class="lni lni-facebook-filled"></i></a>
+            <a href="https://www.instagram.com/wesleybruno_psi/"><i class="lni lni-instagram-filled"></i></a>
           </li>
           <li>
             <a href="javascript:void(0)"><i class="lni lni-twitter-original"></i></a>
@@ -502,7 +494,7 @@
                 </div>
               </div>
             </div>
-            <form action="#" class="contact-form">
+            <form action="#" class="contact-form" id="myForm">
               <div class="row">
                 <div class="col-md-6">
                   <input type="text" name="name" id="name" placeholder="Nome" required />
@@ -516,7 +508,7 @@
                   <input type="text" name="phone" id="phone" placeholder="Telefone" required />
                 </div>
                 <div class="col-md-6">
-                  <input type="text" name="subject" id="email" placeholder="Mensagem" required />
+                  <input type="text" name="subject" id="subject" placeholder="Assunto" required />
                 </div>
               </div>
               <div class="row">
@@ -527,13 +519,14 @@
               <div class="row">
                 <div class="col-12">
                   <div class="button text-center rounded-buttons">
-                    <button type="Enviar Mensagem" href="https://api.whatsapp.com/send?phone=5561981715566&text=Ol%C3%A1,%20quero%20iniciar%20a%20minha%20jornada%20rumo%20ao%20Autoconhecimento!" class="btn primary-btn rounded-full">
+                    <button type="button" class="btn primary-btn rounded-full" onclick="saveAndSendMessage()">
                       Enviar Mensagem
                     </button>
                   </div>
                 </div>
               </div>
             </form>
+            
           </div>
         </div>
       </div>
@@ -556,13 +549,9 @@
                     <img src="assets/images/logo-bruno original.svg" alt="#" class="img-fluid" />
                   </a>
                 </div>
-                <p>
-                  Making the world a better place through constructing elegant
-                  hierarchies.
-                </p>
                 <p class="copyright-text">
-                  <span>© 2024 Ayro UI.</span>Designed and Developed by
-                  <a href="javascript:void(0)" rel="nofollow"> Ayro UI </a>
+                  <span>© 2024 WesleyBruno</span>Designed and Developed by
+                  <a href="https://www.instagram.com/wesleyaquiles/" rel="nofollow"> WesleyAquiles </a>
                 </p>
               </div>
               <!-- End Single Widget -->
@@ -570,36 +559,27 @@
             <div class="col-lg-2 col-md-6 col-12">
               <!-- Single Widget -->
               <div class="footer-widget f-link">
-                <h5>Solutions</h5>
+                <h5>Contatos</h5>
                 <ul>
-                  <li><a href="javascript:void(0)">Marketing</a></li>
-                  <li><a href="javascript:void(0)">Analytics</a></li>
-                  <li><a href="javascript:void(0)">Commerce</a></li>
-                  <li><a href="javascript:void(0)">Insights</a></li>
+                  <li><a href="https://www.instagram.com/wesleybruno_psi/">Instagram</a></li>
+                  <li><a href="https://api.whatsapp.com/send?phone=5561981715566&text=Ol%C3%A1,%20quero%20iniciar%20a%20minha%20jornada%20rumo%20ao%20Autoconhecimento!">WhatsApp</a></li>
+                  <li><a href="mailto:wesleypsico1@gmail.com">wesleypsico1@gmail.com</a></li>
+
                 </ul>
               </div>
               <!-- End Single Widget -->
             </div>
             <div class="col-lg-2 col-md-6 col-12">
               <!-- Single Widget -->
-              <div class="footer-widget f-link">
-                <h5>Support</h5>
-                <ul>
-                  <!-- <li><a href="javascript:void(0)">Pricing</a></li> -->
-                  <li><a href="javascript:void(0)">Documentation</a></li>
-                  <li><a href="javascript:void(0)">Guides</a></li>
-                  <li><a href="javascript:void(0)">API Status</a></li>
-                </ul>
-              </div>
               <!-- End Single Widget -->
             </div>
             <div class="col-lg-4 col-md-6 col-12">
               <!-- Single Widget -->
               <div class="footer-widget newsletter">
                 <h5>Subscribe</h5>
-                <p>Subscribe to our newsletter for the latest updates</p>
+                <p>Assine meu boletim informativo para obter as últimas atualizações</p>
                 <form action="#" method="get" target="_blank" class="newsletter-form">
-                  <input name="EMAIL" placeholder="Email address" required="required" type="email" />
+                  <input name="EMAIL" placeholder="Email" required="required" type="email" />
                   <div class="button">
                     <button class="sub-btn">
                       <i class="lni lni-envelope"></i>
@@ -626,6 +606,7 @@
   <script src="assets/js/glightbox.min.js"></script>
   <script src="assets/js/main.js"></script>
   <script src="assets/js/tiny-slider.js"></script>
+  <script src="assets/js/form-script.js"></script>
 
   <script>
 
